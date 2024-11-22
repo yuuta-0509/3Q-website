@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>防災マップアプリ</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://nabe-puro.vivian.jp/style.css">
+    <link rel="manifest" href="https://nabe-puro.vivian.jp/manifest.json">
+</head>
+<body>
+    <button id="reload-button" onclick="reloadPage()">再読み込み</button>
+    <h1>防災マップ</h1>
+    <div id="map"></div>
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("https://nabe-puro.vivian.jp/service-worker.js")
+                .then(registration => console.log("ServiceWorker登録成功:", registration.scope))
+                .catch(error => console.error("ServiceWorker登録失敗:", error));
+        }
+    </script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+    <script src="https://nabe-puro.vivian.jp/map.js"></script>
+</body>
+</html>
