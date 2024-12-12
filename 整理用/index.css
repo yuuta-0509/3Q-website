@@ -1,0 +1,47 @@
+.tab {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 250px;
+    background-color: white;
+    border: solid 0.1px black;
+    border-radius: 10px;
+    padding: 0 10px;
+    display: none;
+}
+.head-div {
+    width: 100%;
+    padding: 10px;
+}
+.input-middle-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+.input-middle-div select {
+    font-size: 15px;
+}
+.submit-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+.comment-div {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.image-input {
+    width: 100%;
+    padding: 10px 0px;
+}
+.submit-div button {
+    padding: 2px 5px;
+}
+.submit-div p {
+    text-decoration: underline;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="base.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Klee+One&family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <title>UIだけ</title>
+</head>
+<body>
+    <div id="all">
+        <div class="responsive">
+            <header>
+                <div class="logo-div">
+                    <div class="logo">
+                        <img src="PartNERS-icon-final.png" alt="">
+                        <h3>パートナーズ</h3>
+                    </div>
+                </div>
+                <div class="user">
+                    <p>>yuuta</p>
+                </div>
+            </header>
+            <div class="map-div" >
+                <div id="map" class="map-box"></div>
+            </div>
+            <footer>
+                <div class="nav-div">
+                    <a href="index.html">
+                        <div>
+                            <p>ホーム</p>
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                    </a>
+                    <a href="timeline.html">
+                        <div>
+                            <p>タイムライン</p>
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </a>
+                    <a href="weather.html">
+                        <div>
+                            <p>気象情報</p>
+                            <i class="fa-solid fa-cloud-sun-rain"></i>
+                        </div>
+                    </a>
+                    <a href="mypage.html">
+                        <div>
+                            <p>マイページ</p>
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                    </a>
+                </div>
+            </footer>
+            <div class="tab">
+                <div class="head-div"><p>ピンに情報を追加する</p></div>
+                <div class="input-middle-div">
+                    <div><p>ジャンルを選択：</p></div>
+                    <div class="select-div"><select name="" id="">
+                        <option value="">避難所情報</option>
+                        <option value="">水害</option>
+                        <option value="">家屋倒壊</option>
+                        <option value="">強風</option>
+                        <option value="">その他</option>
+                    </select></div>
+                </div>
+                <div class="comment-div">
+                    <div><p>コメント：</p></div>
+                    <div><input type="text"></div>
+                </div>
+                <div class="image-input">
+                    <div><p>画像を追加する：</p></div>
+                    <div><input type="file"></div>
+                </div>
+                <div class="submit-div">
+                    <div><p>削除</p></div>
+                    <div><button>登録</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
